@@ -1,0 +1,144 @@
+@keyframes slide-gradient {
+  0% {
+    background-position: 0% 50%; 
+  }
+  100% {
+    background-position: 100% 50%; 
+  }
+}
+
+.animated-text {
+ 
+  background: linear-gradient(to right, #6a3093, #a044ff, #6a3093);
+  background-size: 200% auto; 
+
+ 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  -webkit-text-fill-color: transparent;
+
+   font-family: Helvetica, sans-serif;
+  animation: slide-gradient 3s linear infinite alternate; 
+  font-size: 100px;
+  font-weight: bold;
+}
+
+
+.sctn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(433cc6d9-09e1-4bbf-8526-e4d144c113b5.jpg);
+background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  position: relative;
+  background-position: center;
+   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(2px);
+    z-index: 0;
+  }
+    
+
+p{
+    color: black;
+    font-size: 100px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+flex-direction: column;
+p{
+    color: black;
+    font-size: 90px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+}
+
+.sctn2{
+    display: grid;
+     
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);  
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+button {
+  height: 3em;
+  width: 10em;
+  border: none;
+  border-radius: 10em;
+  background: #016DD9;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 500;
+
+  &:hover {
+    animation: shake3856 0.3s linear infinite both;
+  }
+}
+
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
